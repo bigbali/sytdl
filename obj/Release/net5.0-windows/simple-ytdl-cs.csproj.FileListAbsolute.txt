@@ -1,0 +1,4 @@
+C:\Users\bigba\Desktop\simple-ytdl-cs\obj\Release\net5.0-windows\SYTDLWindow.g.cs
+C:\Users\bigba\Desktop\simple-ytdl-cs\obj\Release\net5.0-windows\App.g.cs
+C:\Users\bigba\Desktop\simple-ytdl-cs\obj\Release\net5.0-windows\simple-ytdl-cs_MarkupCompile.cache
+C:\Users\bigba\Desktop\simple-ytdl-cs\obj\Release\net5.0-windows\simple-ytdl-cs_MarkupCompile.lref
