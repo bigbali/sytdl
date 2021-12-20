@@ -14,16 +14,16 @@
     <Grid x:Name="MasterGrid" Background="#FF030812" MinWidth="400" MinHeight="400" UseLayoutRounding="True">
         <Grid x:Name="URLGroup">
             <Label       x:Name="URLLabel"               Content="Video URL" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="275" Height="25" Foreground="#FFE8E8E8"/>
-            <TextBox     x:Name="URLInput"               HorizontalAlignment="Left" Margin="10,40,0,0" Text="No URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
-            <RadioButton x:Name="LockURLToggle"      Content="Lock"          Click="toggleUrlLock" HorizontalAlignment="Left" Margin="331,42,0,0" VerticalAlignment="Top" Background="#FF00CA3C" BorderBrush="White"/>
-            <Button      x:Name="DownloadSingleButton"   Content="Download Single" Click="downloadSingle" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="185"/>
-            <Button      x:Name="DownloadPlaylistButton" Content="Download Playlist" Click="downloadPlaylist" HorizontalAlignment="Left" Margin="205,63,0,0" VerticalAlignment="Top" Width="185" BorderThickness="0,0,0,0"/>
+            <TextBox     x:Name="URLInput"               HorizontalAlignment="Left"  TextChanged="setUrl" Margin="10,40,0,0" Text="No URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+            <RadioButton x:Name="LockURLToggle"          Content="Lock"              Click="toggleUrlLock" HorizontalAlignment="Left" Margin="331,42,0,0" VerticalAlignment="Top" Background="#FF00CA3C" BorderBrush="White"/>
+            <Button      x:Name="DownloadSingleButton"   Content="Download Single"   Click="DownloadSingle" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="185"/>
+            <Button      x:Name="DownloadPlaylistButton" Content="Download Playlist" Click="DownloadPlaylist" HorizontalAlignment="Left" Margin="205,63,0,0" VerticalAlignment="Top" Width="185" BorderThickness="0,0,0,0"/>
         </Grid>
         <Grid x:Name="FolderGroup" Margin="0,90,0,251" Height="Auto" Background="#FF7C0606">
             <Label       x:Name="FolderLabel"          Content="Selected folder:" HorizontalAlignment="Left" Margin="11,2,0,0" VerticalAlignment="Top" Width="338" Height="25" Foreground="#FFE8E8E8" VerticalContentAlignment="Center"/>
-            <TextBox     x:Name="SelectedFolderInput"  HorizontalAlignment="Left" Margin="11,32,0,0" Text="No folder selected" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
-            <RadioButton x:Name="LockFolderToggle"     Content="Lock"          Click="toggleFolderLock" HorizontalAlignment="Left" Margin="225,34,0,0" VerticalAlignment="Top" Background="#FF00CA3C" BorderBrush="White"/>
-            <Button      x:Name="SelectedFolderInbput" Content="Select Folder" Click="selectFolder" HorizontalAlignment="Left" Margin="291,31,0,0" VerticalAlignment="Top" Width="99"/>
+            <TextBox     x:Name="FolderPathInput"      HorizontalAlignment="Left" TextChanged="setFolderPath" Margin="11,32,0,0" Text="No folder selected" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+            <RadioButton x:Name="LockFolderToggle"     Content="Lock"             Click="toggleFolderLock" HorizontalAlignment="Left" Margin="225,34,0,0" VerticalAlignment="Top" Background="#FF00CA3C" BorderBrush="White"/>
+            <Button      x:Name="SelectedFolderInbput" Content="Select Folder"    Click="selectFolder" HorizontalAlignment="Left" Margin="291,31,0,0" VerticalAlignment="Top" Width="99"/>
         </Grid>
     </Grid>
 </Window>
